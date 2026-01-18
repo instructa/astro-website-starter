@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "astro-docs": {
+      "description": "Astro docs MCP",
+      "baseUrl": "https://mcp.docs.astro.build/mcp"
+    },
+    "shadcn": {
+      "description": "shadcn/ui MCP",
+      "command": "npx",
+      "args": ["-y", "shadcn@latest", "mcp"]
+    }
+  }
+}

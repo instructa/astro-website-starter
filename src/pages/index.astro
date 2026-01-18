@@ -1,0 +1,67 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { GithubIcon } from "@hugeicons/core-free-icons";
+---
+
+<Layout title="Astro + Alchemy + shadcn/ui">
+  <main class="min-h-screen">
+    <section class="container flex min-h-screen flex-col items-center justify-center gap-6 px-6 py-16 text-center md:px-8">
+      <div class="inline-flex items-center rounded-full border border-border bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
+        Astro starter template
+      </div>
+      <h1 class="text-balance text-4xl font-semibold tracking-tight md:text-5xl">
+        Astro + shadcn/ui + Tailwind v4 + Alchemy on Cloudflare
+      </h1>
+      <p class="max-w-2xl text-balance text-base text-muted-foreground md:text-lg">
+        Production-ready starter template for Astro SSR with shadcn/ui Base, Tailwind CSS v4, and Alchemy-powered Cloudflare Workers deploys.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <Button>
+          <HugeiconsIcon icon={GithubIcon} size={16} color="currentColor" />
+          View on GitHub
+        </Button>
+      </div>
+      <div class="mt-10 grid w-full max-w-5xl gap-4 text-left md:grid-cols-3">
+        <Card className="bg-muted/40">
+          <CardHeader>
+            <CardTitle>Astro SSR + Alchemy</CardTitle>
+            <CardDescription>Cloudflare Workers ready</CardDescription>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground">
+            Ship a production SSR app with Alchemy handling deploys, sessions, and
+            Cloudflare runtime wiring.
+          </CardContent>
+        </Card>
+        <Card className="bg-muted/40">
+          <CardHeader>
+            <CardTitle>Tailwind v4 + shadcn/ui Base</CardTitle>
+            <CardDescription>Tokens, utilities, components</CardDescription>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground">
+            Tailwind v4 Vite plugin with theme tokens and shadcn/ui Base (Nova)
+            components pre-wired for Astro + React.
+          </CardContent>
+        </Card>
+        <Card className="bg-muted/40">
+          <CardHeader>
+            <CardTitle>Docs on demand</CardTitle>
+            <CardDescription>mcporter-powered fetch</CardDescription>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground">
+            mcporter servers for Astro + shadcn docs so you can pull authoritative
+            references on the fly while building.
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+  </main>
+</Layout>

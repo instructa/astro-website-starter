@@ -1,0 +1,19 @@
+---
+import "../styles/global.css";
+
+const { title = "astro-website-starter" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="dark min-h-screen bg-background text-foreground antialiased">
+    <slot />
+  </body>
+</html>

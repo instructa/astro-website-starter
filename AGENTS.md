@@ -1,0 +1,12 @@
+# MUST FOLLOW RULES:
+- Build complete, production grade implementations that scale for >1000 users. No backwards compatibility/fallback concerns.
+- Design for long term sustainability, maintainability, and reliability. no mvp/minimal implementation.
+- Never create compatibility shims, no thin compat wrappers.
+- Ship changes as the single canonical implementation in the primary codepath. Remove obsolete or legacy code in the same change.  
+- Use direct, first class integrations. Replace/Avoid any shims, glue code, thin wrappers, or transitional adapter layers with the real implementation at the correct layer.  
+- Reduce tech debt as part of delivery by deleting dead paths, consolidating duplicated logic, and keeping one source of truth.  
+- Keep a single source of truth for all business rules and policy. This includes validation, enums, flags, constants, and configuration.  
+- If skill call (e.g. $<myskill>). Path is `~/.codex/skills`.
+- Use mcporter for MCP. Config: `config/mcporter.json`. Servers: `astro-docs`, `shadcn`.
+- Icons: always use hugeicons (shadcn iconLibrary=hugeicons).
+- shadcn config in this repo: style=base-nova, baseColor=stone, menuAccent=subtle, menuColor=default, iconLibrary=hugeicons.
